@@ -119,7 +119,7 @@ jefffischer - jfischer@broadleafcommerce.org
 
 Jeff Fischer - jfischer@broadleafcommerce.org
 
-Como nos exemplos acima os emails são padrões e, portanto, os usuários acabam utilizando o mesmo email para diferentes nomes, temos um exemplo abaixo em que podemos ver casos em que os emails são e diferentes e a heurística aplica as regras de similaridade apresentadas acima. O repositório é o **Bootstrap**, que possui 16.713 commits e 912 contribuidores. A heurística identificou 45 alias mas, para evitar que o README fique excessivamente grande, pode-se ver alguns exemplo em que os emails diferem.
+Como nos exemplos acima os emails são padrões e, portanto, os usuários acabam utilizando o mesmo email para diferentes nomes, temos um exemplo abaixo em que podemos ver casos em que os emails são diferentes e a heurística aplica as regras de similaridade apresentadas acima. O repositório é o **Bootstrap**, que possui 16.713 commits e 912 contribuidores. A heurística identificou 45 alias mas, para evitar que o README fique excessivamente grande, pode-se ver alguns exemplo em que os emails diferem.
 
 URL de entrada: https://github.com/twbs/bootstrap
 
