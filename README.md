@@ -13,11 +13,9 @@ A cada commit processado, verifica-se se o usuário que realizou o commit é um 
 
 2. Caso o email seja diferente, tem-se duas situações possíveis.
   
-  * Se a similaridade entre o nome do usuário do commit em questão e algum prefixo do email dos usuários que estão na lista for maior do que 0.93, a heurística retorna este usuário como um alias.
+  * Se a similaridade entre o nome do usuário do commit em questão e algum prefixo do email dos usuários que estão na lista for maior do que 0.85, a heurística retorna este usuário como um alias.
   
-  * Se a similaridade entre o prefixo do email do usuário deste commit e algum nome dos usuários que se encontram na lista for maior do que 0.93, a heurística retorna este usuário como um alias.
-  
-O valor 0.93 foi utilizado como threshold pois ele é indicado pelos próprios autores do método de Levenshtein.
+  * Se a similaridade entre o prefixo do email do usuário deste commit e algum nome dos usuários que se encontram na lista for maior do que 0.85, a heurística retorna este usuário como um alias.
 
 ## Como Utilizar
 A fim de utilizar a ferramenta, basta clonar o repositório, importar para o eclipse e executar a classe principal: **Alias.java**. É necessário observar a entrada e saída que a ferramenta precisa e fornece:
@@ -121,5 +119,22 @@ jefffischer - jfischer@broadleafcommerce.org
 
 Jeff Fischer - jfischer@broadleafcommerce.org
 
+Como nos exemplos acima os emails são padrões e, portanto, os usuários acabam utilizando o mesmo email para diferentes nomes, temos um exemplo abaixo em que podemos ver casos em que os emails são e diferentes e a heurística aplica as regras de similaridade apresentadas acima. O repositório é o **Bootstrap**, que possui 16.713 commits e 912 contribuidores. A heurística identificou 45 alias mas, para evitar que o README fique excessivamente grande, pode-se ver alguns exemplo em que os emails diferem.
+
+URL de entrada: https://github.com/twbs/bootstrap
+
+Saída fornecida pela ferramenta:
+
+_Alias 1_
+
+jody tate - jody.tate@att.com
+
+jody tate - jody@josephtate.com
+
+_Alias 2_
+
+wangsai - wangsai@bootcss.com
+
+wangsai - wangsai7885@gmail.com
 
 
